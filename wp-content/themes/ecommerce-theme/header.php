@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bếp Lê Phan</title>
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/logo-beplephan-mb.png" type="image/png">
-    <?php
-    wp_head();
-    ?>
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/logo-beplephan-mb.png"
+          type="image/png">
+   <?php
+   wp_head();
+   ?>
 </head>
 <body>
 <header class="header w-100 position-fixed" style="z-index: 1001; top: 0" id="header">
     <div class="first-title d-flex flex-wrap justify-content-center">
         <div class="text-center">Vui Tết 'ANt' Quà Ngập Tràn - Săn Voucher ngay!</div>
-        </div>
+    </div>
     <div class="second-title owl-carousel align-items-center">
         <div class="text-center">Thu cũ Giá ngon - Lên đời tiết kiệm</div>
         <div class="text-center">Giao nhanh-miễn phí</div>
@@ -23,13 +24,13 @@
     <div class="header-menu">
         <div class="container">
             <nav>
-                <?php
-                wp_nav_menu( array(
-                    'theme_location' => 'header-menu',
-                    'container' => 'nav',
-                    'container_class' => 'header-nav',
-                ) );
-                ?>
+               <?php
+               wp_nav_menu(array(
+                  'theme_location' => 'header-menu',
+                  'container' => 'nav',
+                  'container_class' => 'header-nav',
+               ));
+               ?>
             </nav>
         </div>
         <div class="section-categories position-fixed" id="section-categories-header">
@@ -39,7 +40,7 @@
                         <ul class="menu">
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/may-hut-mui-new.svg"alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>may-hut-mui-new.svg" alt=""/> </a>
                                     <div><a href="">Bếp từ</a>, <a href="">Bếp gas</a>, <a href="">Máy hút mùi</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
@@ -81,8 +82,8 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/mayruabat.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>mayruabat.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Máy rửa bát</a>, <a href="">Máy giặt</a>, <a href="">Máy
                                             sấy</a></div>
                                 </div>
@@ -118,8 +119,8 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2022/04/lo-nuong-1.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2022/04/lo-nuong-1.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Lò nướng</a>, <a href="">Lò vi sóng</a>, <a href="">Lò
                                             hấp</a></div>
                                 </div>
@@ -161,9 +162,10 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2022/04/tu-lanh-1.svg"
-                                            alt="" /> </a>
-                                    <div><a href="">Tủ lạnh</a>, <a href="">Tủ rượu vang</a>, <a href="">Tủ Cigar</a></div>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2022/04/tu-lanh-1.svg"
+                                            alt=""/> </a>
+                                    <div><a href="">Tủ lạnh</a>, <a href="">Tủ rượu vang</a>, <a href="">Tủ Cigar</a>
+                                    </div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
                                 <div class="megadrop row">
@@ -214,8 +216,9 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2022/04/may-loc-nuoc.svg" alt="" /> </a>
-                                    <div><a href="">Lọc nước </a>, <a href="">Lọc không khí</a>, <a href="">Hút ẩm</a></div>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2022/04/may-loc-nuoc.svg" alt=""/> </a>
+                                    <div><a href="">Lọc nước </a>, <a href="">Lọc không khí</a>, <a href="">Hút ẩm</a>
+                                    </div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
                                 <div class="megadrop row">
@@ -252,9 +255,10 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/may-hut-bui.svg"
-                                            alt="" /> </a>
-                                    <div><a href="">Máy hút bụi</a>, <a href="">Quạt điện</a>, <a href="">Nồi cơm điện</a></div>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>may-hut-bui.svg"
+                                            alt=""/> </a>
+                                    <div><a href="">Máy hút bụi</a>, <a href="">Quạt điện</a>, <a href="">Nồi cơm
+                                            điện</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
                                 <div class="megadrop row">
@@ -288,8 +292,8 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2022/04/may-pha-cafe-1.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2022/04/may-pha-cafe-1.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Máy pha cafe</a>, <a href="">Máy ép trái cây</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
@@ -320,8 +324,8 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2023/02/am-dun-sieu-toc.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2023/02/am-dun-sieu-toc.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Ấm đun siêu tốc</a>, <a href="">Bình thủy điện</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
@@ -344,8 +348,8 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2024/05/noi-chien-khong-dau.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2024/05/noi-chien-khong-dau.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Nồi chiên không dầu</a>, <a href="">Ngập dầu</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
@@ -368,10 +372,10 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2022/04/noi-chien-khong-dau-1.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2022/04/noi-chien-khong-dau-1.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Nồi nấu bếp từ</a>, <a href="">Chảo từ</a>, <a
-                                            href="">Ấm
+                                                href="">Ấm
                                             đun</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
@@ -411,14 +415,14 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2024/05/electric-appliances.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2024/05/electric-appliances.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Điện gia dụng</a>, <a href="">Nhà thông minh</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
                                 <div class="megadrop row">
                                     <div class="col">
-                                        <div style="font-weight: 600">ĐIỆN GIA DỤNG #1 </div>
+                                        <div style="font-weight: 600">ĐIỆN GIA DỤNG #1</div>
                                         <ul>
                                             <li><a href="#">Ấm đun siêu tốc</a></li>
                                             <li><a href="#">Bàn ủi – Bàn là</a></li>
@@ -463,8 +467,8 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2023/03/dispensing-machines.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2023/03/dispensing-machines.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Máy chế biến</a>, <a href="">Đồ dùng nhà bếp</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>
@@ -504,8 +508,8 @@
                             </li>
                             <li class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <a><img src="https://beplephan.com/wp-content/uploads/2022/04/suc-khoe-sac-dep-1.svg"
-                                            alt="" /> </a>
+                                    <a><img src="<?php echo MY_UPLOADS_URL; ?>2022/04/suc-khoe-sac-dep-1.svg"
+                                            alt=""/> </a>
                                     <div><a href="">Sức khỏe</a>, <a href="">Thiết bị vệ sinh</a></div>
                                 </div>
                                 <div><i class="fa-solid fa-chevron-right"></i></div>

@@ -1,9 +1,17 @@
 body {
     font-family: "Roboto", sans-serif;
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1199px) {
+    .container, .container-md, .container-sm {
+        max-width: 1200px !important;
+    }
+}
+
+@media (min-width: 1200px) {
     .container, .container-md, .container-sm {
         max-width: unset;
+        width: 1200px;
     }
 }
 
@@ -26,14 +34,17 @@ body {
 .owl-carousel .owl-nav button:hover {
     opacity: 1;
 }
+
 .owl-carousel .owl-nav button.owl-next {
     right: 0;
     border-radius: 5px 0 0 5px;
 }
+
 .owl-carousel .owl-nav button.owl-prev {
     left: 0;
     border-radius: 0 5px 5px 0;
 }
+
 .owl-carousel .owl-nav button {
     opacity: .5;
     outline: none;
@@ -55,11 +66,13 @@ body {
 li::marker {
     content: none;
 }
+
 img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
 }
+
 a {
     color: #343a40;
     text-decoration: none;
