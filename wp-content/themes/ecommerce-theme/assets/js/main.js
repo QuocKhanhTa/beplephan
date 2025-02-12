@@ -102,13 +102,17 @@ document.addEventListener("DOMContentLoaded", () => {
 function updateCategoryBoxPosition() {
     var btnPosition = document
         .getElementById("section-categories")
-        .getBoundingClientRect();
 
     var categoryBox = document.getElementById("section-categories-header");
-    categoryBox.style.left = btnPosition.left + "px";
-    if (btnPosition.top > 0) {
-        categoryBox.style.top = btnPosition.top + "px";
+    if (btnPosition) {
+        categoryBox.style.left = btnPosition.getBoundingClientRect().left + "px";
+        if (btnPosition.top > 0) {
+            categoryBox.style.top = btnPosition.getBoundingClientRect().top + "px";
+        } else {
+            categoryBox.style.top = 142 + "px";
+        }
     } else {
+        categoryBox.style.left = 50 + "px";
         categoryBox.style.top = 142 + "px";
     }
 }

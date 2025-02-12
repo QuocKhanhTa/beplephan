@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-    <div id="main">
+    <div id="main" class="body-page">
         <div class="container" id="body-home-page" style="background-color: #fff">
             <div class="section-1" style="padding-top: 20px">
                 <div class="row">

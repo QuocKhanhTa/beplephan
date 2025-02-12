@@ -1617,20 +1617,20 @@ $title_categories = [
                 <div class="col-5">
                     <div><i class="fa-solid fa-location-dot"></i> Hệ thống Showroom</div>
                     <p style="font-weight: 600"><i class="fa-regular fa-building"></i> Bếp Lê Phan Hồ Chí Minh</p>
-                    <p style="margin-bottom: 10px; font-style: italic;"><i class="fa-solid fa-location-dot"></i> 23
-                        đường 41 Khu Đô Thị Vạn Phúc, Thủ Đức, HCM</p>
+                    <a href="https://maps.app.goo.gl/sJxbZ6S3QxQfNgeT9" target="_blank" rel="noopener"
+                       style="padding-left: 15px;margin-bottom: 10px; font-style: italic;"><i
+                                class="fa-solid fa-location-dot"></i> 23
+                        đường 41 Khu Đô Thị Vạn Phúc, Thủ Đức, HCM</a>
                     <p style="font-weight: 600"><i class="fa-regular fa-building"></i> Bếp Lê Phan Hà Nội</p>
-                    <p style="margin-bottom: 10px; font-style: italic;"><i class="fa-solid fa-location-dot"></i> 179 Phố
-                        Đông, An Khánh, Hoài Đức, TP. Hà Nội </p>
+                    <a href="https://maps.app.goo.gl/7zwE1PMGStHRXuQg7" target="_blank" rel="noopener"
+                       style="padding-left: 15px;margin-bottom: 10px; font-style: italic;"><i
+                                class="fa-solid fa-location-dot"></i> 179 Phố
+                        Đông, An Khánh, Hoài Đức, TP. Hà Nội </a>
                     <p style="font-weight: 600"><i class="fa-regular fa-building"></i> Bếp Lê Phan Đà Nẵng</p>
-                    <p style="margin-bottom: 10px; font-style: italic;"><i class="fa-solid fa-location-dot"></i> 159
-                        Nguyễn Phước Lan, Hòa Xuân, Cẩm Lệ, Đà Nẵng</p>
-                    <p style="font-weight: 600"><i class="fa-regular fa-building"></i> Bếp Lê Phan Vũng Tàu</p>
-                    <p style="margin-bottom: 10px; font-style: italic;"><i class="fa-solid fa-location-dot"></i> A12
-                        Gateway A, TTCL, P. Nguyễn An Ninh, Vũng Tàu </p>
-                    <p style="font-weight: 600"><i class="fa-regular fa-building"></i> Bếp Lê Phan Nghệ An</p>
-                    <p style="margin-bottom: 10px; font-style: italic;"><i class="fa-solid fa-location-dot"></i> 216 Hà
-                        Huy Tập, P. Hà Huy Tập, TP. Vinh, Nghệ An</p>
+                    <a href="https://maps.app.goo.gl/C2ByXRPebUvpXZjV7" target="_blank" rel="noopener"
+                       style="padding-left: 15px;margin-bottom: 10px; font-style: italic;"><i
+                                class="fa-solid fa-location-dot"></i> 159
+                        Nguyễn Phước Lan, Hòa Xuân, Cẩm Lệ, Đà Nẵng</a>
                 </div>
             </div>
             <div class="row">
@@ -1886,15 +1886,20 @@ $title_categories = [
                     <ul>
                         <li style="margin: 1rem 0">
                             <div><i class="fa-solid fa-location-dot"></i> Bếp Lê Phan Hồ Chí Minh</div>
-                            <span><i class="fa-regular fa-building"></i> 23 đường 41 Khu Đô Thị Vạn Phúc, Thủ Đức, HCM</span>
+                            <a href="https://maps.app.goo.gl/sJxbZ6S3QxQfNgeT9" target="_blank" rel="noopener"><i
+                                        class="fa-regular fa-building"></i> 23 đường 41 Khu Đô Thị Vạn Phúc, Thủ Đức,
+                                HCM</a>
                         </li>
                         <li style="margin-bottom: 1rem">
                             <div><i class="fa-solid fa-location-dot"></i> Bếp Lê Phan Hà Nội</div>
-                            <span><i class="fa-regular fa-building"></i> 179 Phố Đông, An Khánh, Hoài Đức, TP. Hà Nội</span>
+                            <a href="https://maps.app.goo.gl/7zwE1PMGStHRXuQg7" target="_blank" rel="noopener"><i
+                                        class="fa-regular fa-building"></i> 179 Phố Đông, An Khánh, Hoài Đức, TP. Hà Nội</a>
                         </li>
                         <li>
                             <div><i class="fa-solid fa-location-dot"></i> Bếp Lê Phan Đà Nẵng</div>
-                            <span><i class="fa-regular fa-building"></i> 159 Nguyễn Phước Lan, Hòa Xuân, Cẩm Lệ, Đà Nẵng</span>
+                            <a href="https://maps.app.goo.gl/C2ByXRPebUvpXZjV7" target="_blank" rel="noopener"><i
+                                        class="fa-regular fa-building"></i> 159 Nguyễn Phước Lan, Hòa Xuân, Cẩm Lệ, Đà
+                                Nẵng</a>
                         </li>
                     </ul>
                 </div>

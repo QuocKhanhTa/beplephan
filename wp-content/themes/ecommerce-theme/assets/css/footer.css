@@ -22,6 +22,10 @@
     margin-bottom: unset;
 }
 
+.footer .section-footer .container .row div a:hover {
+    color: #d70018;
+}
+
 .footer .section-footer .container .row div div {
     font-weight: 600;
     margin-bottom: 10px;

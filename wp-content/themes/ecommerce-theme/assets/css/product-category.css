@@ -1,0 +1,207 @@
+.body-page .bannerTopHead {
+    height: 30px;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+}
+
+
+#product-list .product-item.hidden {
+    display: none;
+}
+
+#product-list .product-item {
+    padding: 5px;
+    @media (min-width: 1200px) {
+        width: 20%;
+    }
+    @media (max-width: 575px) {
+        width: 50%;
+    }
+}
+
+#product-list .product-item .item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    justify-content: space-between;
+    min-height: 202px;
+    padding: 10px;
+    position: relative;
+}
+
+#product-list .product-item .item .item-detail .product__price--percent {
+    top: 0;
+    left: -14px;
+}
+
+#product-list .product-item .item .item-detail .installment-information {
+    top: 0;
+    right: 0;
+}
+
+#product-list .product-item .item .item-detail a .product_thumbnail .product_thumbnail-detail {
+    margin-top: 40px;
+    min-height: 200px
+}
+
+#product-list .product-item .item .item-detail a .title {
+    height: 65px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+#product-list .product-item .item .item-detail a .price {
+    font-weight: 700;
+}
+
+#product-list .product-item .item .item-detail a .price .sale-price {
+    color: #d70018;
+    padding-right: 5px;
+}
+
+#product-list .product-item .item .item-detail a .price .regular-price {
+    text-decoration: line-through;
+    color: #444;
+}
+
+.product-category-page #load-more {
+    cursor: pointer;
+    padding-top: 10px;
+    position: static;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .91) 50%, #fff 55%);
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.product-category-page #load-more div {
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
+    color: #212529;
+    display: flex;
+    font-size: 14px;
+    height: 34px;
+    justify-content: center;
+    margin: 0 auto 15px;
+    max-width: 335px;
+}
+
+.block-filter-sort {
+    /*padding: 0 10px;*/
+}
+
+.block-filter-sort .filter-sort__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.block-filter-sort .filter-sort__list-filter {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.block-filter-sort .filter-sort__list-filter .btn-filter {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    color: #444;
+    cursor: pointer;
+    font-size: 12px;
+    height: 34px;
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.block-filter-sort .filter-sort__list-filter .btn-filter.active {
+    background: #fef2f2;
+    border: 1px solid #d70018;
+    color: #d70018;
+}
+
+.block-filter-sort .filter-sort__list-filter .btn-filter .icon {
+    margin-right: 6px;
+    width: 15px;
+}
+
+.block-filter-sort .filter-module-container #filterModule .filter-sort__list .position-relative .list-filter-child .price-filter-detail .price-filter-form .btn-filter-group .button {
+    width: calc(50% - 5px);
+    border-width: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    justify-content: center;
+    padding: calc(.5em - 1px) 1em;
+    text-align: center;
+    white-space: nowrap;
+    border-color: transparent;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.block-filter-sort .filter-module-container #filterModule .filter-sort__list .position-relative .list-filter-child .price-filter-detail .price-filter-form .btn-filter-group .button__filter-children-close {
+    background-color: #feecf0;
+    color: #cc0f35;
+}
+
+.block-filter-sort .filter-module-container #filterModule .filter-sort__list .position-relative .list-filter-child .price-filter-detail .price-filter-form .btn-filter-group .button__filter-children-submit {
+    background-color: #d70018;
+    color: #fff;
+}
+
+.list-filter-child {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
+    display: none;
+    opacity: 0;
+    padding: 10px 10px 0;
+    position: absolute;
+    transition: .5s;
+    width: 350px;
+    z-index: -1;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.list-filter-child.active {
+    display: block;
+    max-height: 50vh;
+    opacity: 1;
+    overflow-y: auto;
+    z-index: 1001;
+}
+
+#btn-price-filter {
+    align-items: center;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    color: #444;
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    height: 34px;
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+#btn-price-filter.active {
+    background: #fef2f2;
+    border: 1px solid #d70018;
+    color: #d70018;
+}

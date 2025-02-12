@@ -6,9 +6,11 @@ function register_styles()
    wp_enqueue_style('header-css', get_template_directory_uri() . '/assets/css/header.css', array(), '1.0', 'all');
    wp_enqueue_style('footer-css', get_template_directory_uri() . '/assets/css/footer.css', array(), '1.0', 'all');
    wp_enqueue_style('home-page-css', get_template_directory_uri() . '/assets/css/home-page.css', array(), '1.0', 'all');
+   wp_enqueue_style('product-category-css', get_template_directory_uri() . '/assets/css/product-category.css', array(), '1.0', 'all');
    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', array(), '5.3.3', 'all');
    wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css', array(), '6.7.2', 'all');
    wp_enqueue_style('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
+   wp_enqueue_style('jquery-ui-css', '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
 }
 
 add_action('wp_enqueue_scripts', 'register_styles');
@@ -20,6 +22,7 @@ function register_scripts()
    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js', array(), '5.3.3', true);
    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true);
    wp_enqueue_script('owl-carousel-js', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array('jquery'), '', true);
+   wp_enqueue_script('jquery-ui-slider');
 }
 
 add_action('wp_enqueue_scripts', 'register_scripts');
@@ -277,5 +280,25 @@ function display_products_by_category_shortcode($atts)
 
 add_shortcode('products_by_category', 'display_products_by_category_shortcode');
 
+function get_breadcrumb_from_url()
+{
+   $current_url = $_SERVER['REQUEST_URI'];
+   $path_parts = explode('/', trim(parse_url($current_url, PHP_URL_PATH), '/'));
+
+   $last_slug = end($path_parts);
+   $term = get_term_by('slug', $last_slug, 'product_cat');
+
+   if (!$term || is_wp_error($term)) {
+      return "Không tìm thấy danh mục!";
+   }
+
+   $breadcrumb = array();
+   while ($term && !is_wp_error($term)) {
+      array_unshift($breadcrumb, $term->name);
+      $term = ($term->parent) ? get_term($term->parent, 'product_cat') : null;
+   }
+
+   return implode(' <i class="fa-solid fa-angle-right" style="margin: 0 10px"></i> ', $breadcrumb);
+}
 
 ?>

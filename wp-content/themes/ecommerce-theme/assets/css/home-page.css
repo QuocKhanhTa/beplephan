@@ -1,8 +1,6 @@
-#main {
-    padding-top: 90px;
-    @media (max-width: 768px) {
-        padding: 70px 0 50px 0
-    }
+.body-page {
+    padding-top: 132px;
+    padding-bottom: 59px;
 }
 
 #body-home-page .section-1 .row .col-md-3 #menu-main {
